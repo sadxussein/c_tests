@@ -19,19 +19,7 @@ public:
     bool isTagOpened;
 
     void analyze() {
-        //temp_line = buffer;
-        //if (buffer[0] == '<') {
-        //    buffer.erase(0, 1);
-        //    tag = buffer;
-        //}
-        //else if (buffer != "=") {
-        //    values.push_back(buffer);
-        //}
-        //else if (buffer[buffer.length() - 1] == '>') {
-        //    buffer.pop_back();
-        //    values.push_back(buffer);
-        //    isTagOpened = true;
-        //}
+        
         stringstream ss(line);
         while (!ss.eof()) {
             ss >> temp_line;
