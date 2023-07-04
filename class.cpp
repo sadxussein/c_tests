@@ -5,32 +5,37 @@ using namespace std;
 
 class Student {
 public:
-	void set_age() {
-		
+	void set_age(int i) {
+		this->age = i;
 	}
 	int get_age() {
-		return
+		return this->age;
 	}
-	set_() {
-		
+	void set_standard(int i) {
+		this->standard = i;
 	}
-	get_() {
-		
+	int get_standard() {
+		return this->standard;
 	}
-	set_() {
-		
+	void set_first_name(string s) {
+		this->first_name = s;
 	}
-	get_() {
-		
+	string get_first_name() {
+		return this->first_name;
 	}
-	set_() {
-		
+	void set_last_name(string s) {
+		this->last_name = s;
 	}
-	get_() {
-		
+	string get_last_name() {
+		return this->last_name;
+	}
+	string to_string() {
+		stringstream res;
+		res << this->age << ',' << this->first_name << ',' << this->last_name << ',' << this->standard;
+		return res.str();
 	}
 private:
-	int age, stadard;
+	int age, standard;
 	string first_name, last_name;
 };
 
